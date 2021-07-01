@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sandwiches [
+        <!ELEMENT sandwiches (ingridients)*>
+        <!ELEMENT ingridients (top|midlle|bottom)*>
+        <!ATTLIST ingridients
+                name CDATA #REQUIRED>
+        <!ELEMENT top (#PCDATA)>
+        <!ATTLIST top
+                sort CDATA #IMPLIED>
+        <!ELEMENT midlle (#PCDATA)>
+        <!ATTLIST midlle
+                fresh CDATA #IMPLIED
+                sort CDATA #IMPLIED>
+        <!ELEMENT bottom (#PCDATA)>
+        <!ATTLIST bottom
+                sort CDATA #IMPLIED>
+        ]>
+<sandwiches>
+
+    <ingridients name="taste_and_pretty">
+        <top sort="white-normal">bread</top>
+        <midlle sort="big-holes">cheese</midlle>
+        <midlle sort="salami">sausage</midlle>
+        <midlle>salad</midlle>
+        <bottom>pita</bottom>
+    </ingridients>
+
+    <ingridients name="tasteless_and_ugly">
+        <midlle fresh="look_like">fish</midlle>
+        <midlle>cheese</midlle>
+        <midlle>cucumber</midlle>
+        <midlle sort="pepper_and_strawberry">mayonnaise</midlle>
+        <bottom sort="black_and_blue">bread</bottom>
+    </ingridients>
+
+    <ingridients name="uncertain3000">
+        <top>pita</top>
+        <midlle fresh="100% new, was three days ago..." sort="look_like_salmon">fish</midlle>
+        <bottom>bread</bottom>
+    </ingridients>
+
+    <ingridients name="sandwich_with_ham">
+        <top sort="white-normal">bread</top>
+        <midlle sort="big-holes">cheese</midlle>
+        <midlle sort="ham">sausage</midlle>
+        <midlle>salad</midlle>
+        <bottom>pita</bottom>
+    </ingridients>
+
+</sandwiches>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<factory>
+    <candy>
+        <color>Yellow</color>
+        <shape>Oval</shape>
+        <taste>Melon</taste>
+    </candy>
+    <candy>
+        <color>Green</color>
+        <shape>Round</shape>
+        <taste>Watermelon</taste>
+    </candy>
+    <candy>
+        <color>red</color>
+        <shape>round</shape>
+        <taste>raspberries</taste>
+    </candy>
+</factory>
